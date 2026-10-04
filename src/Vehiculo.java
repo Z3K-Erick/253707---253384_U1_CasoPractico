@@ -7,7 +7,7 @@ public class Vehiculo {
     public Vehiculo(String placa, double kilometraje) {
         this.placa = placa;
         this.kilometraje = kilometraje;
-        // Al registrar un vehículo nuevo, su estatus por defecto es disponible
+        // un vehiculo nuevo tiene por defecto un estatus "disponible"
         this.estatus = "disponible"; 
         this.choferAsignado = null;
     }
@@ -20,7 +20,7 @@ public class Vehiculo {
         return estatus; 
     }
 
-    // Método para asignar el chofer y cambiar el estatus automáticamente
+    // asigna chofer y cambia el status
     public void asignarChofer(Chofer chofer) {
         this.choferAsignado = chofer;
         this.estatus = "ocupado";
