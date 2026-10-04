@@ -5,11 +5,10 @@ public class GestorFlotilla {
     private Scanner scanner;
 
     public GestorFlotilla() {
-        // Creación del ARREGLO DE OBJETOS para las 5 unidades
+        // arreglo de objetos
         flotilla = new Vehiculo[5];
         scanner = new Scanner(System.in);
         
-        // Poblando el arreglo inicial
         flotilla[0] = new Vehiculo("ABC-101", 15000);
         flotilla[1] = new Vehiculo("DEF-202", 23500);
         flotilla[2] = new Vehiculo("GHI-303", 5000);
